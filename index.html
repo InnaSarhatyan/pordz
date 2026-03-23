@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Գիտության և Ծրագրավորման Միասնություն</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            /* Հիմնական գրադիենտ ֆոն ամբողջ էջի համար */
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            background-attachment: fixed; /* Ֆոնը ֆիքսված է մնում սքրոլ անելիս */
+            color: #333;
+        }
+
+        /* Սպիտակ բլոկների հիմնական կոնտեյներ */
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #fff; /* Սպիտակ ֆոն բովանդակության համար */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea, #764ba2);;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: #e8491d 3px solid;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+           color: #704ea1;
+        }
+
+        section {
+            padding: 20px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        h2 {
+            color: #35424a;
+        }
+
+        h5 {
+            font-size: 24px; /* Մի փոքր փոքրացրել եմ չափսը */
+            color: #0d0dca;
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-align: center; /* Կենտրոնացում padding-ի փոխարեն */
+        }
+
+        .experiment-image, .experiment {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        /* Հաշվիչի թափանցիկ բլոկը */
+        .cont {
+            background: rgba(0, 0, 0, 0.2); /* Մուգ թափանցիկ ֆոն */
+            padding: 25px;
+            border-radius: 20px;
+            width: 400px;
+            margin: 20px auto;
+            text-align: center;
+            color: white; /* Տեքստի գույնը սպիտակ գրադիենտի վրա */
+        }
+
+        .cont p {
+            margin-top: 0;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            width: 150px;
+            display: inline-block;
+        }
+
+        button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 10px;
+            background: #ff4d6d;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #e04360;
+        }
+
+        #result {
+            margin-top: 20px;
+            color: #ffeb3b; /* Դեղին գույն արդյունքի համար, որ լավ երևա */
+            font-weight: bold;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-left: 3px solid #e8491d;
+            overflow-x: auto;
+            font-family: "Courier New", Courier, monospace;
+            border-radius: 5px;
+            color: #333;
+            text-align: left;
+        }
+
+        .conclusion {
+            background-color: #e8f4f8;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #35424a;
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #35424a;
+            color: #ffffff;
+            margin-top: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Գիտության և Ծրագրավորման Միասնություն</h1>
+    </div>
+</header>
+
+<div class="container">
+    <section id="introduction">
+        <h2>Նախաբան</h2>
+        <p>Այս էջը ներկայացնում է միասնական մոտեցում խնդիրների լուծմանը՝ միավորելով ռեալ աշխարհի ֆիզիկական փորձը և վերացական մաթեմատիկական մոդելավորումն ու ծրագրավորումը։ Մենք կտեսնենք, թե ինչպես են տարբեր ոլորտներում օգտագործվում նույն վերլուծական գործիքները և ալգորիթմական մտածողությունը։</p>
+    </section>
+
+    <section id="experiment">
+        <h2>Բաժին 1. Ջրի Եռման Փորձ</h2>
+        <h5>ՕԳՏԱԳՈՐԾՎԵԼ Է</h5>
+        <p style="text-align: center;">
+            500 մլ (0.5 լիտր) սառը ջուր <br>
+            թվային լաբորատոր ջերմաչափ <br>
+            Էլեկտրական սալիկ ( 800 Վտ հզորությամբ) <br>
+            Չափման քայլը: Ամեն 60 վայրկյանը (1 րոպե) մեկ։
+        </p>
+        <p>Այս բաժնում ներկայացված է ջրի տաքացման և եռման գործընթացի ուսումնասիրությունը։ <br>
+           Նույն փորձը կրկնել ենք 3 անգամ և ստացված արդյունքը միջինացրել։ <br>
+           Սկզբում ջերմաստիճանը արագ է աճում, իսկ հետո աճը դանդաղում է։</p>
+        
+        <h5>3 ՓՈՐՁԵՐԻ ԱՂՅՈՒՍԱԿԸ</h5>
+        <img src="img/փորձ.png" alt="Ջրի տաքացման փորձի աղյուսակ" class="experiment-image">
+        
+        <h5>Ջրի տաքացման գրաֆիկ</h5>
+        <img src="img/գրաֆիկ.png" alt="Ջրի տաքացման գրաֆիկ" class="experiment">
+        
+        <p>Ինչպես տեսնում ենք գրաֆիկից, ժամանակի ընթացքում ջերմաստիճանը մոտենում է եռման կետին՝ 100°C: Այս գործընթացը ցույց է տալիս, թե ինչպես են տարբեր չափումներ «սեղմվում» մի ֆիքսված արժեքի շուրջ, և ինչպես է միջինացումը օգնում ստանալ ճշգրիտ արդյունք։</p>
+    </section>
+
+    <section id="equation">
+        <h2>Բաժին 2. Տրանսցենդենտ Հավասարման Լուծում</h2>
+        <p>Այս կորի վարքը մոտավոր նկարագրելու համար ընտրվեց տրանսցենդենտ ֆունկցիա՝ <br>
+           <strong style="font-size: 1.1em; display:block; margin: 10px 0; text-align: center;">f(x) = eˣ - 9 + x²</strong>
+           Միջակայք: x ∈ [-3.5, -2.5] <br>
+           Այսպիսով, իրական ֆիզիկական պրոցեսը ներկայացվեց մաթեմատիկական մոդելով։
+        </p>
+    </section>
+</div> <div class="cont">
+    <h3>Տրանսցենդենտ Հավասարման Լուծում</h3>
+    <p>Մուտքագրիր միջակայքը</p>
+    <input type="text" id="a" placeholder="a (օր․ -3,5)">
+    <input type="text" id="b" placeholder="b (օր․ -2,5)">
+    <br>
+    <button onclick="solve()">Լուծել</button>
+    <h2 id="result"></h2>
+</div>
+
+<div class="container"> <section id="conclusion" class="conclusion">
+        <h2>Վերջաբան</h2>
+        <p>Ամփոփելով՝ մենք տեսանք երկու տարբեր աշխարհներ։ Մեկը՝ շոշափելի, իրական փորձի աշխարհն էր՝ իր ջերմաստիճաններով ու ժամանակով, մյուսը՝ վերացական, տրամաբանական կոդի ու ալգորիթմների աշխարհը։</p>
+        <p>Բայց երբ հարցնում ենք՝ «Ինչի՞ համար էր այս ամենը», պատասխանը միավորում է այս երկու աշխարհները։ Սա մեթոդաբանական և վերլուծական մտածողության միասնության մասին է։</p>
+        <p>Ինչպես ֆիզիկական փորձում մենք միջինացնում էինք տարբեր չափումների տվյալները՝ սխալը նվազեցնելու համար, այնպես էլ ծրագրային կոդում մենք համակցում և միջինացնում ենք երկու տարբեր մաթեմատիկական մեթոդների արդյունքները՝ հասնելու համար առավելագույն ճշգրտության։</p>
+        <p>Այսպիսով, այս ամենը ցույց է տալիս, որ գիտության և ինժեներիայի մեջ, անկախ նրանից՝ մենք աշխատում ենք ռեալ նյութերի, թե վերացական կոդի հետ, մենք օգտագործում ենք նույն վերլուծական գործիքները, նույն ալգորիթմական մտածողությունը և նույն ձգտումը դեպի ճշգրտություն։ Սա միավորված մոտեցում է՝ լուծելու բարդ խնդիրներ և ստանալու հուսալի արդյունքներ երկու տարբեր, բայց փոխլրացնող ոլորտներում։</p>
+    </section>
+</div>
+
+<footer>
+    <div class="container" style="background: transparent; box-shadow: none; margin: 0 auto; width: 100%; color: white; padding: 0;">
+        <p>&copy; 2026 Գիտական Աշխատանք</p>
+    </div>
+</footer>
+
+<script>
+    // ֆունկցիա f(x) = e^x - 9 + x^2
+    function F(x){
+        return Math.exp(x) - 9 + x*x;
+    }
+
+    // Առաջին ածանցյալ f'(x) = e^x + 2x
+    function ac1(x){
+        return Math.exp(x) + 2*x;
+    }
+
+    // Երկրորդ ածանցյալ f''(x) = e^x + 2 (թեև կոդում չի օգտագործվում)
+    function ac2(x){
+        return Math.exp(x) + 2;
+    }
+
+    // Ֆունկցիա՝ ստորակետը կետով փոխարինելու և թիվ ստանալու համար
+    function parseNumber(val){
+        if (!val) return NaN;
+        // Փոխարինում ենք ստորակետը կետով
+        let cleanedVal = val.replace(",", ".");
+        return parseFloat(cleanedVal);
+    }
+
+    function solve(){
+        let aInput = document.getElementById("a").value;
+        let bInput = document.getElementById("b").value;
+
+        let a = parseNumber(aInput);
+        let b = parseNumber(bInput);
+
+        let eps = 0.0001; // Ճշտությունը
+        let resultElement = document.getElementById("result");
+
+        // Մուտքային տվյալների ստուգում
+        if(isNaN(a) || isNaN(b)){
+            resultElement.innerText = "ՍԽԱԼ ՄՈՒՏՔ. Խնդրում ենք ներմուծել թվեր:";
+            resultElement.style.color = "#ff4d6d"; // Կարմիր գույն սխալի համար
+            return;
+        }
+
+        // Համոզվում ենք, որ a < b
+        if (a > b) {
+            let temp = a;
+            a = b;
+            b = temp;
+        }
+
+        let A = F(a);
+        let B = F(b);
+
+        // Ստուգում ենք արմատի գոյությունը միջակայքի ծայրակետերում (Բոլցանո-Կոշիի թեորեմ)
+        if(A * B > 0){
+            resultElement.innerText = "ԱՐՄԱՏ ՉԿԱ տրված միջակայքում կամ ֆունկցիան նշանը չի փոխում:";
+            resultElement.style.color = "#ff4d6d";
+            return;
+        } else if (A === 0) {
+            resultElement.innerText = "ՃՇԳՐԻՏ ԱՐՄԱՏ = " + a.toFixed(5);
+            resultElement.style.color = "#4caf50"; // Կանաչ գույն հաջողության համար
+            return;
+        } else if (B === 0) {
+            resultElement.innerText = "ՃՇԳՐԻՏ ԱՐՄԱՏ = " + b.toFixed(5);
+            resultElement.style.color = "#4caf50";
+            return;
+        }
+
+        resultElement.style.color = "#ffeb3b"; // Վերականգնում ենք դեղին գույնը
+        
+        let c0 = a;
+        let d0 = b;
+        let c1, d1;
+        let iteration = 0;
+        let maxIterations = 1000; // Ապահովության համար
+
+        // Կոմբինացված (համակցված) մեթոդ
+        do {
+            // Լարերի մեթոդ (ֆունկցիայի ուռուցիկության պատճառով սա կմոտենա ձախից)
+            // c1 = c0 - F(c0) * (d0 - c0) / (F(d0) - F(c0))
+            let denChord = F(d0) - F(c0);
+            if (denChord === 0) break; // Խուսափում ենք 0-ի բաժանելուց
+            c1 = c0 - (F(c0) * (d0 - c0)) / denChord;
+
+            // Նյուտոնի մեթոդ (շոշափողների) (կմոտենա աջից)
+            // d1 = d0 - F(d0) / f'(d0)
+            let denNewton = ac1(d0);
+            if (denNewton === 0) break; // Խուսափում ենք 0-ի բաժանելուց
+            d1 = d0 - F(d0) / denNewton;
+
+            // Թարմացնում ենք արժեքները հաջորդ քայլի համար
+            c0 = c1;
+            d0 = d1;
+            
+            iteration++;
+            // Դուրս գալ, եթե հասել ենք առավելագույն իտերացիաներին (ցիկլից չկախվելու համար)
+            if (iteration > maxIterations) break;
+
+        } while(Math.abs(c0 - d0) >= eps); // Ցիկլը շարունակվում է, քանի դեռ տարբերությունը մեծ է eps-ից
+
+        // Վերջնական արմատը վերցնում ենք որպես երկու ստացված կետերի միջին արժեք
+        let root = (c0 + d0) / 2;
+
+        resultElement.innerText = "ՄՈՏԱՎՈՐ ԱՐՄԱՏ = " + root.toFixed(5);
+        resultElement.style.color = "#4caf50"; // Կանաչ գույն հաջողության համար
+    }
+</script>
+
+</body>
+</html>
